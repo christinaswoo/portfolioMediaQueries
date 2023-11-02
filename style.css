@@ -656,8 +656,12 @@ h1 {
 
 	.maintxt {
 		width: 70%;
-		font-size: 5vw;
+		font-size: 6.5vw;
 		padding: 0;
+	}
+
+	h1 {
+		font-size: 7vw;
 	}
 
 	.christina {
@@ -701,20 +705,21 @@ h1 {
 	}
 
 	.abouttxt {
-		font-size: 3vw;
-		line-height: 4vw;
+		font-size: 5vw;
+		line-height: 6vw;
 		padding-right: 5vw;
 		padding-left: 5vw;
 		padding-top: 0;
 	}
 
-	.contact {
-		font-size: 4vw;
-		padding-top: 5vw;
+	.contact, #links li {
+		font-size: 6vw;
+		padding: 6vw;
 	}
 
 	.boldtext {
-		font-size: 3vw;
+		font-size: 6vw;
+		line-height: 8vw;
 	}
 
 	.previewdesigns, .previewfilms {
@@ -731,14 +736,15 @@ h1 {
 	}
 
 	.designcontainer, .filmcontainer, .mag, .magimg, .spreadimg, .zine, .albumcontain, .albimg, .filmvid video {
-		width: 85%;
+		width: 90%;
 	}
 
 	.magcontainer, .descripsize {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
-		font-size: 2vw;
+		font-size: 6vw;
+		line-height: 6vh;
 	}
 
 	.albumcontain {
@@ -748,8 +754,8 @@ h1 {
 	}
 
 	.mag, .zine {
-		font-size: 2vw;
-		line-height: 3vh;
+		font-size: 6vw;
+		line-height: 6vh;
 		padding: 4vw;
 	}
 
