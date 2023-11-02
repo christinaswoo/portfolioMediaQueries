@@ -49,6 +49,7 @@
     width: 100%;
 }
 
+
 nav {
     font-family: navFont;
     font-size: 3.5vw;
@@ -458,7 +459,7 @@ body .header{
 
 h1 {
 	font-family: bodyFont;
-	font-size: 3vw;
+	font-size: 4vw;
 	color: #2C7290;
 	display: flex;
 	justify-content: center;
@@ -466,7 +467,7 @@ h1 {
 
 }
 
-.magcontainer, .zinecontainer, .filmcontainer {
+.magcontainer, .zineContainer, .zinecontainer, .filmcontainer {
 	max-width: 100%;
 	display: flex;
 	gap: 5%;
@@ -499,6 +500,7 @@ h1 {
 .albumcontain {
 	width: 40%;
 	display: flex;
+	justify-content: center;
 	gap: 5%;
 
 }
@@ -632,76 +634,150 @@ h1 {
 
 
 
-/* Style for the hamburger menu icon */
-.menu-icon, .exit-icon {
-    display: none;
-    cursor: pointer;
-}
+@media only screen and (max-width: 768px)
+ {
+	nav {
+	    font-size: 8vw;
+	}
+	li {
+	    margin-right: 10%;
+	    margin-left: 0;
+	    justify-content: space-between;
+	}
 
-.menu-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-}
+	.navbar {
+		display: flex;
+		justify-content: center;
+		padding-right: 7vw;
+	}
 
-.menu-icon span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px auto;
-    transition: background-color 0.3s, transform 0.3s;
-}
+	.homecontainer {
+		flex-flow: column-reverse;
+	}
 
-/* Style for the navigation menu */
-.menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transition: left 0.3s;
-}
+	.maintxt {
+		width: 70%;
+		font-size: 5vw;
+		padding: 0;
+	}
 
-.menu.active {
-    left: 0;
-}
+	.christina {
+		font-size: 15vw;
+	}
 
-.menu-items {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
+	.logocontainer1 {
+		padding-top: 5vh;
+		width: 55%;
+	}
 
-.menu-items li {
-    margin-bottom: 20px;
-}
+	.previewselected{
+		padding: 0;
+		justify-content: space-around;
+	}
 
-.menu-items a:link, .menu-items a:visited {
-    color: #F55FAA;
-    text-decoration: none;
-    font-size: 2em;
-}
+	.selectedcontainer {
+		width: 80vw;
+		margin: 2vw;
+	}
 
-/* Mobile Styles with Media Query */
-@media screen and (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
+	.header {
+		padding: 5vw;
+	}
 
-    .exit-icon {
-        display: none;
-    }
-}
+	.logocontainer2 {
+		width: 25vw;
+	}
+
+	#christinacontainer2 {
+		display: none;
+	}
+
+	.aboutcontent {
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+
+	.imagescontainer {
+		width: 85%;
+	}
+
+	.abouttxt {
+		font-size: 3vw;
+		line-height: 4vw;
+		padding-right: 5vw;
+		padding-left: 5vw;
+		padding-top: 0;
+	}
+
+	.contact {
+		font-size: 4vw;
+		padding-top: 5vw;
+	}
+
+	.boldtext {
+		font-size: 3vw;
+	}
+
+	.previewdesigns, .previewfilms {
+		justify-content: center;
+		padding: 5vw;
+	}
+
+	.previews img {
+		height: 60vh;
+	}
+
+	.previews img, .preview img {
+		padding: 2vw;
+	}
+
+	.designcontainer, .filmcontainer, .mag, .magimg, .spreadimg, .zine, .albumcontain, .albimg, .filmvid video {
+		width: 85%;
+	}
+
+	.magcontainer, .descripsize {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		font-size: 2vw;
+	}
+
+	.albumcontain {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+
+	.mag, .zine {
+		font-size: 2vw;
+		line-height: 3vh;
+		padding: 4vw;
+	}
+
+	.spreadimg {
+		padding: 2vw;
+	}
 
 
+	.zineContainer {
+		display: flex;
+		flex-flow: column-reverse;
+		justify-content: center;
+	}
+
+	.zineContainer video, .filmvid video {
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.zineimg {
+		width: 45%;
+	}
+
+	
+
+ }
 
 
 
